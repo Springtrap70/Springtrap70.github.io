@@ -1,0 +1,105 @@
+  <html>
+  <head>
+    <link type="text/css" rel="stylesheet" href="main.css" />
+    <title> Undertale</title>
+    <script>
+    function banner(){
+    var text = confirm("Did You Really Want to Click on My Banner?");
+    return text;
+    }
+
+    function answer(){
+     var radio = document.getElementsByName("trivia");
+     var selection = false;
+     var message = "";
+
+     for( var i = 0; i < radio.length; i++) {
+     if(radio[i].value == "Sans" && radio[i].checked == false) {
+        selection = false;
+    } //end if statement
+  } //end for loop
+     if(selection == false) {
+     message = message + "<b><p style='color:pink'>That's My Favorite charcter to!</p></b>";
+    } else {
+    message = message + "<b><p style='color:pink'>That's My Favorite charcter To!</p></b>";
+     }
+     document.getElementById("response").innerHTML = message;
+     }
+  </script>
+
+
+ </head>
+<body id="back">
+
+ <a href="http://bing.com" onclick="return banner()">
+     <header id="header">Undertale</header>
+ </a>
+
+
+  <nav>
+     <ul id="navmenu">
+      <li class="navitem"><a href="index.html"> Home</a></li>
+      <li class="navitem"><a href="games.html"> Games</a></li>
+      <li class="navitem"><a href="videos.html"> Videos</a></li>
+     </ul>
+   </nav>
+
+ 
+   
+   <div id="leftside"></div>
+
+   <div class="clearfloat"></div>
+
+
+
+
+
+             <h1>Flowers</h1>
+  
+      
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/vJTtrn7vhNE" frameborder="0" allowfullscreen></iframe>
+
+   <audio width="400" height="220" controls autoplay>
+    <source src="http://www.w3schools.com/tags/horse.mp3" type="audio/mpeg">
+    Your browser does not support HTML 5 audio
+   </audio> 
+   
+  
+   <p class="poop"><i><b><b>The game <u>Undertale</u> is a <u>good</u> game well I like people may not like it because it may be <u>hard</u> to them.Undertale was going to be Steven Universe.The Crystal Gems are not in Undertale just Steven and Steven is Sans.Steven died by his mother's gem he got cancer and died.Then after Steven died the gems scattered there gems killing them self. Then Undertale happened in a mountain. It shows Frisk falling down in the mountain.   </i></b>
+ 
+
+  <div class="wrap-list">
+   <ol>
+    <li class="listitem">The game charcters.</li> 
+    <li class="listitem">It's about a game.</li>
+    <li class="listitem">What's your favorite undertale charcter?</li>
+   </ol>
+  </div>
+
+
+ <div id="rightside">
+    <div class="wrap-trivia"> 
+      <h2 class="dark">Undertale Question:</h2>
+      <p class="poop"> What's are favorite <span class="UT">Undertale</span> charcter? </p>
+      <form>
+        <div id="response"> </div>
+    <div class="CAN">
+        <input type="radio" name="EDIT" value="Chara">Chara<br>
+        <input type="radio" name="EDIT" value="Sans">Sans<br>
+        <input type="radio" name="EDIT" value="Papyrus">Papyrus<br>
+        <input type="radio" name="EDIT" value="Frisk">Frisk<br>
+        <input type="button" value="Click Here" id="submit" onclick="answer()">
+      </form>
+    </div>
+ </div>
+
+
+   <img src="https://thumbs.dreamstime.com/z/pink-flower-purple-flower-meadow-36265276.jpg" />
+   <img src="https://thumbs.dreamstime.com/z/snow-white-fluffy-texture-53177059.jpg" />
+   <hr>
+   <center> Undertale <a href="http://www.youtube.com"><b>Spingtrap My Favorite Website</b></a> </center>
+
+
+   <footer>Undertale</footer>
+  </body>
+</html>
